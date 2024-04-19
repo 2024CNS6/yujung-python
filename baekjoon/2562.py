@@ -1,7 +1,7 @@
 n = []
 for i in range(9):
     a = int(input())
-    n.append(i)
+    n.append(a)
 
 print(max(n))
-print(n.index(max(n)+1))
+print(n.index(max(n))+1)
