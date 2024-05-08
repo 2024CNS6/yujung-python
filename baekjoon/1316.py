@@ -1,8 +1,13 @@
-n = int(input())
-li = []
-c = 0
-for i in range(n):
-    s = input()
-    li.append(s)
-for i in li:
-    
+N = int(input())
+cnt = N
+
+for i in range(N):
+    word = input()
+    for j in range(0, len(word)-1):
+        if word[j] == word[j+1]:
+            pass
+        elif word[j] in word[j+1:]:
+            cnt -= 1
+            break
+
+print(cnt)
