@@ -1,9 +1,14 @@
-for i in range(3):
-    n = int(input())
-    li = [int(input()) for i in range(n)]
-    if sum(li) == 0:
-        print("0")
-    elif sum(li)>0:
-        print("+")
-    else:
-        print("-")
+import sys
+input = sys.stdin.readline
+
+for _ in range(3) :
+    t = int(input())
+    hap = 0
+    for i in range(t) :
+        hap += int(input())
+    if hap == 0 :
+        print('0')
+    elif hap > 0 :
+        print('+')
+    else :
+        print('-')
