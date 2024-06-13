@@ -14,4 +14,4 @@ if d < 40:
     d = 40
 if e < 40:
     e = 40
-print((a+b+c+d+e)/5)
+print((a+b+c+d+e)//5)
