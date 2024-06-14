@@ -1,6 +1,6 @@
-n = int(input())
+L = int(input())
 
-s = n//5
-if n//5!=0:
-    s += 1
-print(s)
+if(L%5 == 0):
+    print(L//5)
+else:
+    print(L//5 + 1)
